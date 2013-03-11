@@ -35,7 +35,7 @@ Dax dependencies are:
 
 
 +  [CMake 2.8.8](http://cmake.org/cmake/resources/software.html)
-+  [Boost 1.49.0] (http://www.boost.org/) or greater
++  [Boost 1.49.0](http://www.boost.org) or greater
 +  [Cuda Toolkit 4+](https://developer.nvidia.com/cuda-toolkit) or [Thrust 1.4 / 1.5](https://thrust.github.com)
    depending if you want Cuda and/or OpenMP
 

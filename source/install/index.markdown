@@ -20,7 +20,7 @@ If you haven't used git before I recommend following [github's excellent setup g
 +  [CMake 2.8.8](http://cmake.org/cmake/resources/software.html)
    To build the Dax testing framework you need a relatively new version of CMake
    We recommend 2.8.10 but support back to 2.8.8
-+  [Boost 1.49.0] (http://www.boost.org/) or greater
++  [Boost 1.49.0](http://www.boost.org) or greater
    We only require that you install the header components of Boost
 +  [Cuda Toolkit 4+](https://developer.nvidia.com/cuda-toolkit) or [Thrust 1.4 / 1.5](https://thrust.github.com)
    For the CUDA backend you will need at least the CudaToolkit 4 and the corresponding device driver. If you don't have a NVidia graphics card and want to use OpenMP acceleration, you will need Thrust version 1.4 or 1.5. We currently haven't tested with Thrust 1.6
