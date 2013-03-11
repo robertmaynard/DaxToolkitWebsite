@@ -1,2 +1,7 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+body > header{
+    background-image:url('/images/dax_logo.png');
+    padding: 1.6em 0 1em 0
+}
