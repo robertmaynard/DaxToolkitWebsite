@@ -24,26 +24,7 @@ Why
 
 The Dax Toolkit simplifies the development of parallel visualization algorithms. Consider the computation of gradients using finite differences. Because the Dax Toolkit is structured such that it can schedule its execution on a GPU, we measure that it performs this operation over 100 times faster than VTK running on a single CPU. Furthermore, the Dax API can be switched to a different device by changing only a single line of code. Dax currently provides scheduling for CUDA (GPU), OpenMP (multicore CPU), and serial execution.
 
-``` cpp
-struct CellGradient : public dax::exec::WorkletMapCell
-{
-  typedef void ControlSignature(
-      Topology, Field(Point), Field(Point), Field(Out));
-  typedef _4 ExecutionSignature(_1,_2,_3);
-
-  template<class CellTag> DAX_EXEC_EXPORT
-  dax::Vector3 operator()(...)
-  {
-    dax::Vector3 parametricCellCenter =
-        dax::exec::ParametricCoordinates<CellTag>::Center();
-
-    return dax::exec::CellDerivative(parametricCellCenter,
-                                     coords,
-                                     pointField,
-                                     cellTag);
-  }
-};
-```
+{% include_code lang:cpp Gradient.worklet %}
 
 Getting Dax
 ---------------
@@ -59,10 +40,12 @@ Dax dependencies are:
    depending if you want Cuda and/or OpenMP
 
 ```
+
 git clone git://github.com/Kitware/DaxToolkit.git dax
 mkdir dax-build
 cd dax-build
 cmake-gui ../dax
+
 ```
 
 A detailed walk-through of installing and building Dax can be found on our [Install page](/install/)
@@ -95,21 +78,21 @@ Publications
 Contacts
 ---------------
 
-Kenneth Moreland
-Sandia National Laboratories
-kmorel@sandia.gov
+Kenneth Moreland  
+Sandia National Laboratories  
+kmorel@sandia.gov  
 
-Robert Maynard
-Kitware Inc
-robert.maynard@kitware.com
+Robert Maynard  
+Kitware Inc  
+robert.maynard@kitware.com  
 
-Berk Geveci
-Kitware, Inc.
-berk.geveci@kitware.com
+Berk Geveci  
+Kitware, Inc.  
+berk.geveci@kitware.com  
 
-Kwan-Liu Ma
-University of California at Davis
-ma@cs.ucdavis.edu
+Kwan-Liu Ma  
+University of California at Davis  
+ma@cs.ucdavis.edu  
 
 
 

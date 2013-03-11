@@ -3,10 +3,8 @@
 #include <dax/cont/Scheduler.h>
 #include <dax/cont/UniformGrid.h>
 
-
 //construct a handle to store the results
-
-  dax::cont::ArrayHandle<dax::Scalar> magnitudeHandle;
+dax::cont::ArrayHandle<dax::Scalar> magnitudeHandle;
 
 //input grid of cubes 1,1,1 at origin 0,0,0 with extents 0,0,0 => 128,128,128
 dax::cont::UniformGrid<> inputGrid;
@@ -17,3 +15,4 @@ dax::cont::Scheduler<> scheduler;
 scheduler.Invoke(dax::worklet::Magnitude(),
                  grid->GetPointCoordinates(),
                  magnitudeHandle);
+
