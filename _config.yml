@@ -5,9 +5,9 @@
 url: http://robertmaynard.github.com/DaxToolkit
 title: Dax Toolkit
 subtitle: Data Analysis at Extreme
-author: Robert Maynard
-simple_search: http://google.com/search
-description:
+author: Kitware Inc.
+#simple_search: http://google.com/search
+#description:
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
