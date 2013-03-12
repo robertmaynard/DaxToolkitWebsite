@@ -2,9 +2,9 @@
 layout: page
 title: "Building and Installing Dax"
 date: 2013-03-10 12:07
-comments: true
-sharing: true
-footer: true
+comments: false
+sharing: false
+footer: false
 ---
 
 Dax is currently available from both github and kitware. Both repositories have public anonymous read only access.  
