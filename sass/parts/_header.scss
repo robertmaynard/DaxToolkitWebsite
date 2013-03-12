@@ -2,15 +2,17 @@ $header-height: 30px;
 
 #header{
 	height: $header-height;
-	padding: 30px 0;
+	padding: 30px 20px;
 	border-bottom: 1px solid $color-gray04;
 	line-height: $header-height;
+	z-index:1;
 	@media screen and (max-width: 1040px){
 		height: auto;
 		position: relative;
 		padding-bottom: 10px;
 	}
 	a{
+		padding: 10px 200px;
 		color: $color-gray01;
 		@include transition(color 0.3s);
 		&:hover{
@@ -24,7 +26,22 @@ $header-height: 30px;
 		@media screen and (max-width: 1040px){
 			float: none;
 		}
+		//override the title link to include a background image
+		//that contains the Dax log so the title become Dax Toolkit
+		>a{
+		background-image:url(../images/dax_logo.png);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 210px auto;
+		padding: 20px 0px 20px 210px;
+		color: $color-gray01;
+		@include transition(color 0.3s);
+		&:hover{
+			color: $color-main;
+			}
+		}
 	}
+
 }
 #main-nav{
 	float: left;
