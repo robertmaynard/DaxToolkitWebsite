@@ -7,8 +7,8 @@ sharing: false
 footer: false
 ---
 
-Dax is an open source C++ header only toolkit that provides the ability to do fine-grained concurrency on scientific visualization data structures. We currently support CUDA, OpenMP, Intel TBB, and Serial
-Execution.
+The Dax Toolkit is an open source C++ header only library that provides a collection of data analysis and visualization algorithms that run well on multi- and many-core processors.  The Dax Toolkit also makes it easy to design other visualization algorithms that work well on such processors. We currently support CUDA, OpenMP, Intel TBB, and Serial Execution.
+
 
 ### How ###
 
@@ -92,4 +92,16 @@ University of California at Davis
 ma@cs.ucdavis.edu  
 
 
+## License ##
 
+Copyright (c) Kitware, Inc.  
+All rights reserved.  
+See LICENSE.txt for details.  
+
+This software is distributed WITHOUT ANY WARRANTY; without even  
+the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  
+[See the copyright file for more information.](LICENSE.txt)  
+
+Copyright 2011 Sandia Corporation.  
+Under the terms of Contract DE-AC04-94AL85000 with Sandia Corporation,  
+the U.S. Government retains certain rights in this software.  
