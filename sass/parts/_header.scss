@@ -10,6 +10,7 @@ $header-height: 30px;
 		height: auto;
 		position: relative;
 		padding-bottom: 10px;
+		padding-right:40px;
 	}
 	a{
 		padding: 10px 200px;
@@ -17,31 +18,42 @@ $header-height: 30px;
 		@include transition(color 0.3s);
 		&:hover{
 			color: $color-main;
+			}
+
+		img[src$="forkme_right_orange_ff7600.png"] {
+			@media screen and (max-width: 425px){
+				display:none
+			}
+			}
 		}
-	}
+
 	h1{
 		float: left;
 		font-weight: 300;
 		font-size: 30px;
 		@media screen and (max-width: 1040px){
 			float: none;
-		}
+			z-index: 0;
+			}
+
 		//override the title link to include a background image
 		//that contains the Dax log so the title become Dax Toolkit
 		>a{
-		background-image:url(../images/dax_logo.png);
-		background-repeat: no-repeat;
-		background-position: left;
-		background-size: 72% auto;
-		padding: 20px 0px 20px 210px;
-		color: $color-gray01;
-		@include transition(color 0.3s);
-		&:hover{
-			color: $color-main;
+			background-image:url(../images/dax_logo.png);
+			background-repeat: no-repeat;
+			background-position: left;
+			background-size: 72% auto;
+			padding: 20px 0px 20px 210px;
+			color: $color-gray01;
+			@include transition(color 0.3s);
+			&:hover{
+				color: $color-main;
+				}
+			@media screen and (max-width: 1040px){
+				border: 20px;
+				}
 			}
 		}
-	}
-
 }
 #main-nav{
 	float: left;
@@ -180,7 +192,7 @@ $header-height: 30px;
 	}
 	.menu{
 		position: relative;
-		width: 100%;
+		width: 85%;
 		.button{
 			background: #f2f2f2;
 			border: 1px solid $color-gray04;
@@ -206,6 +218,10 @@ $header-height: 30px;
 				position: absolute;
 				top: 0;
 				right: 40px;
+			}
+
+		@media screen and (max-width: 425px){
+				width:95%
 			}
 		}
 		.container{
