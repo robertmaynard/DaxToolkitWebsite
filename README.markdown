@@ -1,3 +1,24 @@
+## Setting up DAX website ##
+
+once you check this out, do the following:
+
+```
+rake setup_github_pages
+  targeting git@github.com:daxtoolkit/daxtoolkit.github.com.git as the page
+```
+
+to push any changes do:
+```
+rake generate
+rake deploy
+```
+
+to view changes on local machine
+```
+rake generate
+rake preview
+```
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
