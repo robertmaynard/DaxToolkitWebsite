@@ -13,7 +13,6 @@ $header-height: 30px;
 		padding-right:40px;
 	}
 	a{
-		padding: 10px 200px;
 		color: $color-gray01;
 		@include transition(color 0.3s);
 		&:hover{
@@ -21,7 +20,13 @@ $header-height: 30px;
 			}
 
 		img[src$="forkme_right_orange_ff7600.png"] {
-			@media screen and (max-width: 425px){
+			@media screen and (max-width: 1040px){
+				padding: 0px 20px;
+			}
+			}
+
+		img[src$="forkme_right_orange_ff7600.png"] {
+			@media screen and (max-width: 600px){
 				display:none
 			}
 			}
@@ -220,7 +225,7 @@ $header-height: 30px;
 				right: 40px;
 			}
 
-		@media screen and (max-width: 425px){
+		@media screen and (max-width: 600px){
 				width:95%
 			}
 		}
