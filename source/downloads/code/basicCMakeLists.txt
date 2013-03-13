@@ -1,0 +1,18 @@
+# Required (sort of) for all cmake files
+cmake_minimum_required(VERSION 2.8)
+
+# All CMake projects start with this command.
+project(daxexample CXX)
+
+# This command will find the Dax configuration. It will ask you for the
+# location of a file named DaxConfig.cmake, which is either in the Dax build
+# directory or in the include directory of an install.
+find_package(Dax REQUIRED)
+
+# This will load in all the necessary configuration for using Dax with OpenMP.
+# Because we specified REQUIRED, CMake will error if the configuration could
+# not be loaded.
+DaxConfigureOpenMP(REQUIRED)
+
+# Now just create an executable like normal.
+add_executable(daxexample_openmp ex1.cxx)
