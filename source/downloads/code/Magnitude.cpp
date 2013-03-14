@@ -2,6 +2,7 @@
 #include <dax/cont/ArrayHandle.h>
 #include <dax/cont/Scheduler.h>
 #include <dax/cont/UniformGrid.h>
+#include <dax/worklet/Magnitude.h>
 
 //construct a handle to store the results
 dax::cont::ArrayHandle<dax::Scalar> magnitudeHandle;

@@ -23,7 +23,7 @@ using namespace std;
 #include <dax/cont/DeviceAdapter.h>
 #include <dax/cont/Schedule.h>
 #include <dax/cont/UniformGrid.h>
-#include <dax/cont/worklet/Magnitude.h>
+#include <dax/worklet/Magnitude.h>
 
 int main(int, char*[])
 {

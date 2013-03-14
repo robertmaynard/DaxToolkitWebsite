@@ -4,6 +4,7 @@
 #include <dax/cont/GenerateTopology.h>
 #include <dax/cont/UniformGrid.h>
 #include <dax/cont/UnstructuredGrid.h>
+#include <dax/worklet/Tetrahedralize.h>
 
 typedef dax::cont::GenerateTopology<dax::worklet::Tetrahedralize,
                                         dax::cont::ArrayHandleConstantValue<dax::Id>,

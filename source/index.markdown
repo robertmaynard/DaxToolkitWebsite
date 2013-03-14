@@ -24,7 +24,7 @@ Although worklets are not allowed communication, many visualization algorithms r
 
 The Dax Toolkit simplifies the development of parallel visualization algorithms. Consider the computation of gradients using finite differences. Because the Dax Toolkit is structured such that it can schedule its execution on a GPU, we measure that it performs this operation over 100 times faster than VTK running on a single CPU. Furthermore, the Dax API can be switched to a different device by changing only a single line of code. Dax currently provides scheduling for CUDA (GPU), OpenMP (multicore CPU), and serial execution.
 
-{% include_code lang:cpp Gradient.worklet %}
+{% include_code lang:cpp Gradient.h %}
 
 ## Getting Dax ##
 
@@ -54,7 +54,7 @@ A detailed walk-through of installing and building Dax can be found on our [Inst
 
 This basic worklet finds the magnitude of a vector
 
-{% include_code lang:cpp Magnitude.worklet %}
+{% include_code lang:cpp Magnitude.h %}
 
 And here is how to execute the worklet:
 
